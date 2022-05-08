@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民視x營建署_耐震宣導網站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.2/lottie.min.js"
+        integrity="sha512-R47oG09eydaf225nXyDdSWJ8frKwxkC7QIHXdPpbUx9KaAiC6akjpWxTBw1hb7whk7P2sJNuRhS2ljSBegnIPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav_top">
+            <div class="nav_top_all">
+                <div class="nav_top_logo">
+                    <a href="index.html"><img src="./img/logo-1.svg"></a>
+                </div>
+                <input id="nav-toggle" type="checkbox">
+                <label for="nav-toggle" class="ham">
+                    <div class="ham-origin">
+                        <div class="ham-bar ham-bar--top"></div>
+                        <div class="ham-bar ham-bar--middle"></div>
+                        <div class="ham-bar ham-bar--bottom"></div>
+                    </div>
+                </label>
+                <div class="nav_top_title_all">
+                    <div class="nav_top_title">
+                        <div class="nav_right_img nav_right_img1 img-box nav_top_title_img">
+                            <svg class="svg" width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg_fill" class="svg_fill"
+                                    d="M15.0211 0.379761C15.2652 0.15706 15.5775 0.0241987 15.9069 0.0029979C16.2362 -0.0182029 16.563 0.073517 16.8335 0.263094L16.9789 0.379761L32 14.0706H27.6364V27.1956C27.6363 27.5528 27.5055 27.8975 27.2688 28.1645C27.032 28.4314 26.7058 28.6019 26.352 28.6437L26.1818 28.6539H16.7273L20.3636 22.8206L15.2727 18.4456L21.0909 14.0706L17.4545 11.1539L18.1818 6.77893L13.8182 11.1539L17.4545 14.0706L10.1818 18.4456L15.6364 23.5498L10.9091 28.6539H5.81818C5.46192 28.6539 5.11806 28.5227 4.85182 28.2854C4.58559 28.048 4.4155 27.721 4.37382 27.3662L4.36364 27.1956V14.0706H0L15.0211 0.379761Z"
+                                    fill="#828282" />
+                            </svg>
+                        </div>
+                        <span class="nav_top_title1 nav_top_title_txt">地震災害</span>
+                    </div>
+                    <div class="nav_top_title">
+                        <div class="nav_right_img img-box nav_top_title_img">
+                            <svg class="svg" width="32" height="25" viewBox="0 0 32 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg_fill"
+                                    d="M31.8641 18.9273L29.1699 4.85352C28.5589 2.09521 27.5838 0 23.1014 0H8.8958C4.34447 0 3.43834 2.09521 2.82736 4.85352L0.137945 18.9273C-0.344771 21.2598 0.443435 23.1144 2.43912 23.8362C4.43481 24.5581 5.9995 23.4473 7.11526 21.2803L8.17862 19.1939C8.27071 19.0134 8.4115 18.8617 8.58535 18.7558C8.7592 18.6498 8.95928 18.5937 9.16336 18.5938H22.8366C23.0407 18.5937 23.2408 18.6498 23.4146 18.7558C23.5885 18.8617 23.7293 19.0134 23.8214 19.1939L24.8847 21.2803C25.9977 23.4473 27.5659 24.5615 29.5609 23.8362C31.5559 23.1109 32.342 21.2598 31.8641 18.9273ZM14.3436 10.9375H11.0335V14.2188H8.82684V10.9375H5.51678V8.75H8.82684V5.46875H11.0335V8.75H14.3436V10.9375ZM19.0328 11.2109C18.7601 11.2109 18.4934 11.1308 18.2666 10.9805C18.0398 10.8303 17.863 10.6168 17.7586 10.367C17.6542 10.1171 17.6269 9.84223 17.6801 9.57702C17.7334 9.31182 17.8647 9.06821 18.0576 8.877C18.2505 8.6858 18.4962 8.55559 18.7638 8.50283C19.0313 8.45008 19.3086 8.47715 19.5606 8.58063C19.8126 8.68411 20.028 8.85935 20.1796 9.08418C20.3311 9.30901 20.412 9.57335 20.412 9.84375C20.412 10.2064 20.2667 10.5541 20.0081 10.8105C19.7494 11.0669 19.3986 11.2109 19.0328 11.2109V11.2109ZM22.067 14.2188C21.7943 14.2188 21.5276 14.1386 21.3008 13.9883C21.074 13.8381 20.8972 13.6246 20.7928 13.3748C20.6885 13.1249 20.6611 12.85 20.7144 12.5848C20.7676 12.3196 20.8989 12.076 21.0918 11.8848C21.2847 11.6936 21.5304 11.5634 21.798 11.5106C22.0655 11.4579 22.3428 11.485 22.5948 11.5884C22.8469 11.6919 23.0623 11.8672 23.2138 12.092C23.3654 12.3168 23.4462 12.5812 23.4462 12.8516C23.4462 13.2142 23.3009 13.5619 23.0423 13.8183C22.7836 14.0747 22.4328 14.2188 22.067 14.2188ZM22.067 8.20312C21.7943 8.20312 21.5276 8.12294 21.3008 7.97271C21.074 7.82248 20.8972 7.60896 20.7928 7.35914C20.6885 7.10932 20.6611 6.83442 20.7144 6.56921C20.7676 6.304 20.8989 6.06039 21.0918 5.86919C21.2847 5.67799 21.5304 5.54777 21.798 5.49502C22.0655 5.44227 22.3428 5.46934 22.5948 5.57282C22.8469 5.6763 23.0623 5.85154 23.2138 6.07637C23.3654 6.3012 23.4462 6.56553 23.4462 6.83594C23.4462 7.19854 23.3009 7.54629 23.0423 7.80269C22.7836 8.05908 22.4328 8.20312 22.067 8.20312ZM25.1013 11.2109C24.8285 11.2109 24.5618 11.1308 24.335 10.9805C24.1082 10.8303 23.9314 10.6168 23.8271 10.367C23.7227 10.1171 23.6954 9.84223 23.7486 9.57702C23.8018 9.31182 23.9331 9.06821 24.126 8.877C24.3189 8.6858 24.5647 8.55559 24.8322 8.50283C25.0997 8.45008 25.377 8.47715 25.6291 8.58063C25.8811 8.68411 26.0965 8.85935 26.248 9.08418C26.3996 9.30901 26.4805 9.57335 26.4805 9.84375C26.4805 10.2064 26.3351 10.5541 26.0765 10.8105C25.8179 11.0669 25.467 11.2109 25.1013 11.2109V11.2109Z"
+                                    fill="#828282" />
+                            </svg>
+                        </div><span class="nav_top_title_txt">耐震遊戲</span>
+                    </div>
+                    <div class="nav_top_title">
+                        <div class="nav_right_img img-box nav_top_title_img">
+                            <svg class="svg" width="29" height="30" viewBox="0 0 29 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg_fill"
+                                    d="M21.1196 0.6225C21.2128 0.435703 21.3562 0.278542 21.5337 0.168603C21.7112 0.0586642 21.9158 0.000285526 22.1246 0H24.3746C24.5833 0.000285526 24.7879 0.0586642 24.9654 0.168603C25.1429 0.278542 25.2863 0.435703 25.3796 0.6225L26.8796 3.6225C26.9624 3.78798 27.0031 3.97133 26.9982 4.15632C26.9932 4.34131 26.9427 4.52221 26.8511 4.683L25.4996 7.05V15H27.3746C27.6729 15 27.9591 15.1185 28.1701 15.3295C28.381 15.5405 28.4996 15.8266 28.4996 16.125V18.75H17.9996V16.125C17.9996 15.8266 18.1181 15.5405 18.3291 15.3295C18.5401 15.1185 18.8262 15 19.1246 15H20.9996V7.05L19.6481 4.683C19.5562 4.52234 19.5054 4.3415 19.5002 4.15651C19.495 3.97152 19.5355 3.7881 19.6181 3.6225L21.1181 0.6225H21.1196ZM17.9996 21V24.75C17.9996 26.1424 18.5527 27.4777 19.5373 28.4623C20.5218 29.4469 21.8572 30 23.2496 30C24.642 30 25.9773 29.4469 26.9619 28.4623C27.9464 27.4777 28.4996 26.1424 28.4996 24.75V21H17.9996ZM10.2416 0.318C10.3935 0.215015 10.5684 0.150785 10.7509 0.130914C10.9334 0.111043 11.118 0.136134 11.2886 0.204C12.7591 0.787181 14.0311 1.78072 14.9529 3.06629C15.8748 4.35187 16.4078 5.87532 16.4884 7.45522C16.569 9.03512 16.1939 10.6049 15.4076 11.9776C14.6213 13.3504 13.4571 14.4682 12.0536 15.198V26.196C12.0536 27.2049 11.6528 28.1724 10.9394 28.8858C10.226 29.5992 9.25845 30 8.24957 30C7.24069 30 6.27312 29.5992 5.55974 28.8858C4.84635 28.1724 4.44557 27.2049 4.44557 26.196V15.198C3.04202 14.4682 1.8778 13.3504 1.09154 11.9776C0.30528 10.6049 -0.069884 9.03512 0.0107232 7.45522C0.0913303 5.87532 0.624312 4.35187 1.5462 3.06629C2.46809 1.78072 3.74003 0.787181 5.21057 0.204C5.38115 0.136489 5.56565 0.111718 5.748 0.131845C5.93034 0.151972 6.105 0.216386 6.25675 0.319475C6.4085 0.422564 6.53273 0.561199 6.61863 0.723299C6.70453 0.8854 6.74948 1.06605 6.74957 1.2495V6.75C6.74957 7.14782 6.90761 7.52936 7.18891 7.81066C7.47021 8.09196 7.85174 8.25 8.24957 8.25C8.64739 8.25 9.02892 8.09196 9.31023 7.81066C9.59153 7.52936 9.74957 7.14782 9.74957 6.75V1.2495C9.74957 1.06612 9.7944 0.88553 9.88015 0.72344C9.9659 0.56135 10.09 0.422679 10.2416 0.3195V0.318Z"
+                                    fill="#828282" />
+                            </svg>
+                        </div><span class="nav_top_title_txt">耐震補強</span>
+                    </div>
+                    <div class="nav_top_title">
+                        <div class="nav_right_img img-box nav_top_title_img">
+                            <svg class="svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg_fill"
+                                    d="M6.375 10.125C5.97718 10.125 5.59564 10.283 5.31434 10.5643C5.03304 10.8456 4.875 11.2272 4.875 11.625C4.875 12.0228 5.03304 12.4044 5.31434 12.6857C5.59564 12.967 5.97718 13.125 6.375 13.125C6.77282 13.125 7.15436 12.967 7.43566 12.6857C7.71696 12.4044 7.875 12.0228 7.875 11.625C7.875 11.2272 7.71696 10.8456 7.43566 10.5643C7.15436 10.283 6.77282 10.125 6.375 10.125ZM4.875 20.625C4.875 20.2272 5.03304 19.8456 5.31434 19.5643C5.59564 19.283 5.97718 19.125 6.375 19.125C6.77282 19.125 7.15436 19.283 7.43566 19.5643C7.71696 19.8456 7.875 20.2272 7.875 20.625C7.875 21.0228 7.71696 21.4044 7.43566 21.6857C7.15436 21.967 6.77282 22.125 6.375 22.125C5.97718 22.125 5.59564 21.967 5.31434 21.6857C5.03304 21.4044 4.875 21.0228 4.875 20.625ZM3.9375 0C2.89321 0 1.89169 0.414842 1.15327 1.15327C0.414842 1.89169 0 2.89321 0 3.9375V23.0625C0 25.2375 1.7625 27 3.9375 27H13.533C12.5293 25.4332 11.9971 23.6108 12 21.75C12 16.365 16.365 12 21.75 12C23.6827 12 25.485 12.5625 27 13.533V3.9375C27 1.7625 25.2375 0 23.0625 0H3.9375ZM3 11.625C3 10.7299 3.35558 9.87145 3.98851 9.23851C4.62145 8.60558 5.47989 8.25 6.375 8.25C7.27011 8.25 8.12855 8.60558 8.76149 9.23851C9.39442 9.87145 9.75 10.7299 9.75 11.625C9.75 12.5201 9.39442 13.3785 8.76149 14.0115C8.12855 14.6444 7.27011 15 6.375 15C5.47989 15 4.62145 14.6444 3.98851 14.0115C3.35558 13.3785 3 12.5201 3 11.625V11.625ZM6.375 17.25C7.27011 17.25 8.12855 17.6056 8.76149 18.2385C9.39442 18.8715 9.75 19.7299 9.75 20.625C9.75 21.5201 9.39442 22.3785 8.76149 23.0115C8.12855 23.6444 7.27011 24 6.375 24C5.47989 24 4.62145 23.6444 3.98851 23.0115C3.35558 22.3785 3 21.5201 3 20.625C3 19.7299 3.35558 18.8715 3.98851 18.2385C4.62145 17.6056 5.47989 17.25 6.375 17.25V17.25ZM11.25 10.3125C11.25 9.795 11.67 9.375 12.1875 9.375H23.0618C23.3104 9.375 23.5488 9.47377 23.7247 9.64959C23.9005 9.8254 23.9993 10.0639 23.9993 10.3125C23.9993 10.5611 23.9005 10.7996 23.7247 10.9754C23.5488 11.1512 23.3104 11.25 23.0618 11.25H12.1875C11.67 11.25 11.25 10.83 11.25 10.3125ZM3.94725 3.82125H23.0475C23.2961 3.82125 23.5346 3.92002 23.7104 4.09584C23.8862 4.27165 23.985 4.51011 23.985 4.75875C23.985 5.00739 23.8862 5.24585 23.7104 5.42166C23.5346 5.59748 23.2961 5.69625 23.0475 5.69625H3.94725C3.69861 5.69625 3.46015 5.59748 3.28434 5.42166C3.10852 5.24585 3.00975 5.00739 3.00975 4.75875C3.00975 4.51011 3.10852 4.27165 3.28434 4.09584C3.46015 3.92002 3.69861 3.82125 3.94725 3.82125V3.82125ZM30 21.75C30 26.3062 26.3062 30 21.75 30C17.1938 30 13.5 26.3062 13.5 21.75C13.5 17.1938 17.1938 13.5 21.75 13.5C26.3062 13.5 30 17.1938 30 21.75ZM22.5 16.5C22.5 16.3011 22.421 16.1103 22.2803 15.9697C22.1397 15.829 21.9489 15.75 21.75 15.75C21.5511 15.75 21.3603 15.829 21.2197 15.9697C21.079 16.1103 21 16.3011 21 16.5V21H16.5C16.3011 21 16.1103 21.079 15.9697 21.2197C15.829 21.3603 15.75 21.5511 15.75 21.75C15.75 21.9489 15.829 22.1397 15.9697 22.2803C16.1103 22.421 16.3011 22.5 16.5 22.5H21V27C21 27.1989 21.079 27.3897 21.2197 27.5303C21.3603 27.671 21.5511 27.75 21.75 27.75C21.9489 27.75 22.1397 27.671 22.2803 27.5303C22.421 27.3897 22.5 27.1989 22.5 27V22.5H27C27.1989 22.5 27.3897 22.421 27.5303 22.2803C27.671 22.1397 27.75 21.9489 27.75 21.75C27.75 21.5511 27.671 21.3603 27.5303 21.2197C27.3897 21.079 27.1989 21 27 21H22.5V16.5Z"
+                                    fill="#828282" />
+                            </svg>
+                        </div><span class="nav_top_title_txt">申請補助</span>
+                    </div>
+                    <div class="nav_top_title nav_top_title_end">
+                        <div class="nav_right_img img-box nav_top_title_img">
+                            <svg class="svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg_fill"
+                                    d="M30 15C30 18.9782 28.4196 22.7936 25.6066 25.6066C22.7936 28.4196 18.9782 30 15 30C11.0218 30 7.20644 28.4196 4.3934 25.6066C1.58035 22.7936 0 18.9782 0 15C0 11.0218 1.58035 7.20644 4.3934 4.3934C7.20644 1.58035 11.0218 0 15 0C18.9782 0 22.7936 1.58035 25.6066 4.3934C28.4196 7.20644 30 11.0218 30 15V15ZM10.305 11.3119H11.8519C12.1106 11.3119 12.3169 11.1 12.3506 10.8431C12.5194 9.61312 13.3631 8.71688 14.8669 8.71688C16.1531 8.71688 17.3306 9.36 17.3306 10.9069C17.3306 12.0975 16.6294 12.645 15.5212 13.4775C14.2594 14.3944 13.26 15.465 13.3313 17.2031L13.3369 17.61C13.3388 17.733 13.3891 17.8503 13.4768 17.9366C13.5645 18.0229 13.6826 18.0713 13.8056 18.0712H15.3262C15.4506 18.0712 15.5698 18.0219 15.6577 17.934C15.7456 17.846 15.795 17.7268 15.795 17.6025V17.4056C15.795 16.0594 16.3069 15.6675 17.6888 14.6194C18.8306 13.7512 20.0213 12.7875 20.0213 10.7644C20.0213 7.93125 17.6288 6.5625 15.0094 6.5625C12.6338 6.5625 10.0313 7.66875 9.85313 10.8487C9.85056 10.9093 9.86041 10.9697 9.88206 11.0263C9.90371 11.0829 9.93672 11.1345 9.97904 11.1779C10.0214 11.2213 10.0721 11.2555 10.1282 11.2786C10.1842 11.3016 10.2444 11.313 10.305 11.3119V11.3119ZM14.6644 23.3925C15.8081 23.3925 16.5938 22.6537 16.5938 21.6544C16.5938 20.6194 15.8063 19.8919 14.6644 19.8919C13.5694 19.8919 12.7725 20.6194 12.7725 21.6544C12.7725 22.6537 13.5694 23.3925 14.6663 23.3925H14.6644Z"
+                                    fill="#828282" />
+                            </svg>
+                        </div><span class="nav_top_title_txt">常見問題</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div>
+            <div class="flex_div">
+                <div class="main_div">
+                    <div>
+                        <div class="section0">
+                            <div class="section0_banner">
+                                <div id="lottie"></div>
+                                <!-- <img src="./img/animate.png" alt=""> -->
+                            </div>
+                            <div class="section0_content_all">
+                                <div class="section0_content_1">
+                                    <!-- <div class="section0_text_bg_1"></div> -->
+                                    <!-- <div class="section0_text"> -->
+                                    <!-- <span>強化耐震性</span> -->
+                                    <!-- </div> -->
+                                </div>
+                                <div class="section0_content_2">
+                                    <!-- <div class="section0_text_bg_2"></div> -->
+                                    <!-- <div class="section0_text"> -->
+                                    <!-- <span>給你一個安心的家</span> -->
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_all section1">
+                            <div class="section1_content">
+                                <div class="section_title" data-aos="zoom-in">
+                                    <h1>地震災害</h1>
+                                </div>
+                                <div data-aos="fade-right">
+                                    <div class="content">
+                                        台灣位於菲律賓海板塊與歐亞板塊上，地震在台灣是十分常見，1999年發生921大地震規模7.3，造成2,000多人死亡、1萬多人受傷，超過10萬棟房屋受損，損失超過4,000億臺幣，造成臺灣百年來極為嚴重的生命財產損失。因此唯有記取震撼的教訓，加強房屋耐震性能，才能防範於未然，確保住得安全。自921大地震後，政府積極推動「建築物實施耐震能力評估及補強方案」，適當的結構耐震補強可以降低建築物受地震損害之風險，保障居民生命財產之安全。
+                                    </div>
+                                </div>
+                                <div class="section1_pic_all">
+                                    <div class="section1_pic">
+                                        <div class="section1_img1_all">
+                                            <div class="section1_img section1_img1" data-aos="fade-up"
+                                                data-aos-duration="1500"></div>
+                                            <div class="section1_img_text_bg" data-aos="fade-right"
+                                                data-aos-duration="1500">
+                                                <div class="section1_img_text">公有建築物進行耐震能力評估</div>
+                                            </div>
+                                        </div>
+                                        <div class="section1_img1_all">
+                                            <div class="section1_img section1_img2" data-aos="fade-up"
+                                                data-aos-duration="1000"></div>
+                                            <div class="section1_img_text_bg" data-aos="fade-right"
+                                                data-aos-duration="1000">
+                                                <div class="section1_img_text">進行剪力牆補強、鋼柱臨時支撐</div>
+                                            </div>
+                                        </div>
+                                        <div class="section1_img1_all">
+                                            <div class="section1_img section1_img3" data-aos="fade-up"
+                                                data-aos-duration="500"></div>
+                                            <div class="section1_img_text_bg" data-aos="fade-right"
+                                                data-aos-duration="500">
+                                                <div class="section1_img_text">危險建築進行拆除作業</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_all section2">
+                            <div class="section2_all">
+                                <div class="section_title" data-aos="zoom-in">
+                                    <h1>耐震遊戲</h1>
+                                </div>
+                                <div class="section2_game_all">
+                                    <div class="section2_bg">
+                                        <div class="section2_game_contect">
+                                            <div class="section2_game_bg" id="gamebg">
+                                                <div class="section2_game_bg_start">
+                                                    <div class="section2_game_balck_bg" id="blackbg">
+                                                        <div class="section2_game_yellow_border" id="gamerules">
+                                                            <div class="section2_game_txt">
+                                                                <div class="section2_game_pop_title">遊戲規則</div>
+                                                                <div class="section2_game_pop_contect">
+                                                                    於指定時間內，拖移題目物件至房屋正確位置，獲得新屋與建設小知識！</div>
+                                                            </div>
+                                                            <div class="section2_game_btn_yellow" id="gamebtn">
+                                                                <img src="./img/game/start_btn.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 遊戲成功 -->
+                                                    <div class="success" id="success"></div>
+                                                    <!-- 觀看影片 -->
+                                                    <div class="section2_game_yellow_border2 animate__animated animate__fadeInUp"
+                                                        id="vido">
+                                                        <div class="section2_game_pop_title">觀看影片即可參與抽獎!</div>
+                                                        <div id="player" class="video"></div>
+                                                        <div type="button" class="section2_game_btn_yellow2"
+                                                            id="fillBtn" disabled>
+                                                            <img src="./img/game/fill_btn.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <!-- 填寫表單 -->
+                                                    <div class="section2_game_yellow_border2 animate__animated animate__fadeInUp"
+                                                        id="form">
+                                                        <div class="section2_game_pop_title section2_game_pop_title2">填寫資料抽大獎</div>
+                                                        <form action="" id="userInfoForm">
+                                                            <div class="formtext">姓 名:
+                                                                <input type="text" class="forminput" required>
+                                                            </div>
+                                                            <div class="formtext">手 機:
+                                                                <input type="text" class="forminput" required>
+                                                            </div>
+                                                            <div class="formtext">地 址:
+                                                                <input type="text" class="forminput" required>
+                                                            </div>
+                                                            <input class="form_btn" type="submit" value="送出"
+                                                                id="formBtn" />
+                                                        </form>
+                                                    </div>
+                                                    <!-- 送出表單 -->
+                                                    <div class="section2_game_yellow_border3 animate__animated animate__fadeInUp"
+                                                        id="formSend">
+                                                        <div class="section2_game_pop_title">填單完成</div>
+                                                        <div class="section2_game_pop_contect">
+                                                            收到您的聯絡資訊囉！中獎後會再電話通知，亦可在民國111年xx月xx日後於本網站「中獎名單」的頁面中查詢。</div>
+                                                        <input class="form_send_btn" type="submit" value="確定"
+                                                            id="formSendBtn" />
+                                                    </div>
+
+                                                    <div class="section2_game_building" id="building">
+                                                        <div class="space_img spaceimg1" id="space1" data-answer="1">
+                                                        </div>
+                                                        <div class="space_img spaceimg2" id="space2" data-answer="2">
+                                                        </div>
+                                                    </div>
+                                                    <div class="timer_content" id="timer">
+                                                        <div class="timer_text">
+                                                            <span id="timer_number">30</span>s
+                                                        </div>
+                                                    </div>
+                                                    <div class="section2_game_question" id="questionContainer">
+                                                        <div class="question_text" id="titleContainer">Q1.補強？</div>
+                                                        <div class="question_text_hint" id="hintContainer">穩定度！</div>
+                                                        <div class="question_img" id="questionDragableContainer"
+                                                            draggable="true">
+                                                            <img class="img_fit" id="questionImgContainer"
+                                                                src="../img/game/window.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_all section3">
+                            <div class="section3_all">
+                                <div class="section_title" data-aos="zoom-in">
+                                    <h1>耐震補強</h1>
+                                </div>
+                                <div>
+                                    <div class="content" data-aos="zoom-in">
+                                        依照建築物的現況，耐震階段性補強設計有多種選擇，為鼓勵民眾進行耐震補強，內政部營建署特別訂定「建築物結構快篩及階段性補強經費補助執行作業要點」，將建築物耐震補強概分A、B兩種方案，並依據補強施作面積大小酌予補助。
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="section3_box_all">
+                                        <div class="section3_box1" data-aos="fade-right" data-aos-duration="1000">
+                                            <div class="section_box_title_bg">
+                                                <div class="section_box_title">全國建築耐震安檢暨輔導重建補強流程圖</div>
+                                            </div>
+                                            <div class="section3_box_img" data-aos="zoom-in">
+                                                <img class="section3_box_img1" src="./img/form-1.svg" alt="">
+                                                <img class="section3_box_img2" src="./img/form-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="section3_box_link_all">
+                                            <div class="section3_box_link" data-aos="fade-down"></div>
+                                            <div class="section3_box_link section3_box_link2" data-aos="fade-down">
+                                            </div>
+                                        </div>
+                                        <div class="section3_box1 section3_box2" data-aos="fade-right"
+                                            data-aos-duration="1000">
+                                            <div class="section_box_title_bg">
+                                                <div class="section_box_title">階段性補強補助金額及補助比率</div>
+                                            </div>
+                                            <div class="section3_box_img section3_box_img_2" data-aos="zoom-in">
+                                                <img class="section3_box_img1" src="./img/form-2.svg" alt="">
+                                                <img class="section3_box_img2" src="./img/form-5.svg" alt="">
+                                            </div>
+                                            <div class="section3_box2_content">
+                                                若申請案件經耐震能力初步評估結果危險度總分大於四十五分、 耐震能力詳細評估結果為須補強或重建，
+                                                或經直轄市、縣（市）政府認定耐震能力具潛在危險疑慮之建築物， 補助上限得提高為「新臺幣450萬元，並以不超過總補強費用85 %為限。 」
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div data-aos="zoom-in">
+                                        <h1>補強方案說明</h1>
+                                    </div>
+                                    <div class="section3_case_all">
+                                        <div class="section3_case">
+                                            <div class="section3_caseA">
+                                                <div class="section3_case_img" data-aos="flip-left"><img
+                                                        src="./img/pic-8.png" alt=""></div>
+                                                <div class="section3_case_title" data-aos="fade-up">A方案</div>
+                                                <div class="section3_caseA_list">
+                                                    <div class="section3_caseA_li" data-aos="fade-down">
+                                                        <div class="section3_caseA_num">01</div>
+                                                        <div class="section3_caseA_txt">針對軟弱層施作耐震補強措施</div>
+                                                    </div>
+                                                    <div class="section3_caseA_li" data-aos="fade-down">
+                                                        <div class="section3_caseA_num">02</div>
+                                                        <div class="section3_caseA_txt">利用底層的公共空間進行耐震補強，降低住戶居住空間的影響
+                                                        </div>
+                                                    </div>
+                                                    <div class="section3_caseA_li" data-aos="fade-down">
+                                                        <div class="section3_caseA_num">03</div>
+                                                        <div class="section3_caseA_txt">
+                                                            底層耐震補強的工期短，僅需2~3個月，施工期間仍可居住，減少搬遷安置問題
+                                                        </div>
+                                                    </div>
+                                                    <div class="section3_caseA_li" data-aos="fade-down">
+                                                        <div class="section3_caseA_num">04</div>
+                                                        <div class="section3_caseA_txt">補強經費相對精省</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="section3_caseA">
+                                                <div class="section3_case_img" data-aos="flip-left"><img
+                                                        src="./img/pic-9.png" alt=""></div>
+                                                <div class="section3_case_title" data-aos="fade-up">B方案</div>
+                                                <div class="section3_caseA_list">
+                                                    <div class="section3_caseA_li" data-aos="fade-down">
+                                                        <div class="section3_caseA_num section3_caseB_num">01</div>
+                                                        <div class="section3_caseA_txt">不只補救軟弱層，更能達到法規標準耐震力的八成以上</div>
+                                                    </div>
+                                                    <div class="section3_caseA_li" data-aos="fade-down">
+                                                        <div class="section3_caseA_num section3_caseB_num">02</div>
+                                                        <div class="section3_caseA_txt">補強範圍較廣，保障更多</div>
+                                                    </div>
+                                                    <div class="section3_caseA_li" data-aos="fade-down">
+                                                        <div class="section3_caseA_num section3_caseB_num">03</div>
+                                                        <div class="section3_caseA_txt">補強後整體耐震能力較A方案強</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_all section4 section4_bg">
+                            <div class="section4_all">
+                                <div class="section_title" data-aos="zoom-in">
+                                    <h1>申請補助</h1>
+                                </div>
+                                <div class="section4_content" data-aos="fade-right">辦理耐震階段性補強補助，建築物應符合下列條件之一</div>
+                                <div>
+                                    <div class="section4_box0" data-aos="fade-down">
+                                        <div class="section4_box0_img">
+                                            <img src="./img/warn.svg" alt="">
+                                        </div>
+                                        <div class="section4_content_bold">耐震能力初步評估結果危險度總分大於三十分者</div>
+                                    </div>
+                                    <div class="section4_box0" data-aos="fade-down">
+                                        <div class="section4_box0_img">
+                                            <img src="./img/repair.svg" alt="">
+                                        </div>
+                                        <div class="section4_content_bold">耐震能力詳細評估結果為須補強或重建者</div>
+                                    </div>
+                                    <div class="section4_box1" data-aos="fade-right">
+                                        <div class="section4_box1_all">
+                                            <div class="section_box_title_bg">
+                                                <div class="section_box_title">申請流程</div>
+                                            </div>
+                                            <div class="section4_box1_mark" data-aos="fade-down"
+                                                data-aos-duration="500">
+                                                <img src="./img/mark-2.svg" alt="">
+                                                <span class="section4_box1_mark_num">1</span>
+                                            </div>
+                                            <div class="section4_box1_content">
+                                                <span>已成立管理組織：</span>
+                                                檢附區分所有權人會議決議通過申請耐震階段性補強補助之會議紀錄，並以管理組織主任委員或管理負責人為申請人。<br>
+                                                <span>未成立管理組織：</span>
+                                                未推選管理負責人者，應有區分所有權人數及區分所有權比率逾二分之一同意（但區分所有權同意比率逾三分之二者，其人數不予計算），並推派一人代表為申請人。
+                                            </div>
+                                            <div class="section4_box1_img" data-aos="zoom-in">
+                                                <img class="section4_box1_img_1" src="./img/form-3.svg" alt="">
+                                                <img class="section4_box1_img_2" src="./img/form-6.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section4_box1 section4_box2" data-aos="fade-down">
+                                        <div class="section4_box1_all">
+                                            <div class="section_box_title_bg">
+                                                <div class="section_box_title">申請補助所需文件</div>
+                                            </div>
+                                            <div class="section4_box1_mark" data-aos="fade-down"
+                                                data-aos-duration="500">
+                                                <img src="./img/mark-2.svg" alt="">
+                                                <span class="section4_box1_mark_num">2</span>
+                                            </div>
+                                            <div class="section4_box_content">
+                                                <div class="section4_box2_content_title" data-aos="fade-down">
+                                                    申請人應於受理申請期間內，向建築物所在地之地方政府提出申請：
+                                                </div>
+                                                <div class="section4_box2_content_ul" data-aos="fade-down">
+                                                    <div class="section4_box2_content_li"><span>1</span></div>
+                                                    <div class="section4_box2_content_li_txt">申請書</div>
+                                                </div>
+                                                <div class="section4_box2_content_ul" data-aos="fade-down">
+                                                    <div class="section4_box2_content_li"><span>2</span></div>
+                                                    <div class="section4_box2_content_li_txt">
+                                                        公寓大廈管理組織報備證明文件影本與區分所有權人會議決議通過申請耐震階段性補強補助之會議紀錄；公寓大廈未成立管理組織者，檢具建物登記謄本及區分所有權人同意文件
+                                                    </div>
+                                                </div>
+                                                <div class="section4_box2_content_ul" data-aos="fade-down">
+                                                    <div class="section4_box2_content_li"><span>3</span></div>
+                                                    <div class="section4_box2_content_li_txt">使用執照影本或其他合法建築物證明文件</div>
+                                                </div>
+                                                <div class="section4_box2_content_ul" data-aos="fade-down">
+                                                    <div class="section4_box2_content_li"><span>4</span></div>
+                                                    <div class="section4_box2_content_li_txt">
+                                                        耐震能力初步評估結果危險度總分大於三十分之評估報告書影本或耐震能力詳細評估結果為須補強或重建報告書影本</div>
+                                                </div>
+                                                <div class="section4_box2_content_ul" data-aos="fade-down">
+                                                    <div class="section4_box2_content_li"><span>5</span></div>
+                                                    <div class="section4_box2_content_li_txt">補強概估經費表</div>
+                                                </div>
+                                                <div class="section4_box2_content_ul" data-aos="fade-down">
+                                                    <div class="section4_box2_content_li"><span>6</span></div>
+                                                    <div class="section4_box2_content_li_txt">其他文件</div>
+                                                </div>
+                                            </div>
+                                            <div class="section4_box1_img">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section4_box1 section4_box3" data-aos="fade-right">
+                                        <div class="section4_box1_all">
+                                            <div class="section_box_title_bg">
+                                                <div class="section_box_title">經費補助申請</div>
+                                            </div>
+                                            <div class="section4_box1_mark" data-aos="fade-down"
+                                                data-aos-duration="500">
+                                                <img src="./img/mark-2.svg" alt="">
+                                                <span class="section4_box1_mark_num">3</span>
+                                            </div>
+                                            <div class="section4_box_content">
+                                                <div class="">階段性補強補助經費分為二階段，申請人得一次或分階段向執行機關申請撥付，其規定如下：</div>
+                                                <div>
+                                                    <div class="section4_box3_all">
+                                                        <div class="section4_box3_both section4_box3_l">
+                                                            <div data-aos="fade-down">
+                                                                <div class="section1_img section4_img1"></div>
+                                                            </div>
+                                                            <div class="section4_box3_both_title" data-aos="fade-down">
+                                                                階段性補強設計階段</div>
+                                                            <div class="section4_box3_content_bg"
+                                                                data-aos="zoom-in-down">
+                                                                <div class="section4_box3_content">
+                                                                    <div class="section4_box3_content_title"
+                                                                        data-aos="fade-down">
+                                                                        階段性補強申請撥付設計之實際經費，以不超過該機構審查通過之總補助經費百分之十為限，其應附文件如下：
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>1</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">申請函
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>2</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">補助核准函
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>3</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">
+                                                                            依法登記開業建築師、執業土木工程技師或結構工程技師簽證之階段性補強設計圖說及預算書
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>4</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">
+                                                                            本部委託機構審查通過證明文件</div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>5</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">
+                                                                            階段性補強設計合約書</div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>6</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">
+                                                                            設計單位參加階段性補強講習會參訓證明文件</div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>7</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">費用請撥領據
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>8</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">其他文件
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="section4_box3_both section4_box3_r">
+                                                            <div data-aos="fade-down">
+                                                                <div class="section1_img section4_img1 section4_img2">
+                                                                </div>
+                                                            </div>
+                                                            <div class="section4_box3_both_title" data-aos="fade-down">
+                                                                階段性補強竣工階段</div>
+                                                            <div class="section4_box3_content_bg"
+                                                                data-aos="zoom-in-down">
+                                                                <div class="section4_box3_content">
+                                                                    <div class="section4_box3_content_title">
+                                                                        工程竣工並經執行機關審查通過後，得申請撥付賸餘之補助經費，其應檢附文件如下：</div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>1</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">申請函
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>2</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">補助核准函
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>3</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">
+                                                                            階段性補強監造合約書及補強工程合約書</div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>4</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">
+                                                                            依法登記開業建築師、執業土木工程技師或結構工程技師簽證之工程竣工圖、監造證明，及營造業出具之竣工證明
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>5</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">
+                                                                            符合建築法等相關法令規定之執行機關許可證明文件</div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>6</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">
+                                                                            監造單位及營造業參加階段性補強講習會參訓證明文件</div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>7</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">施工前後照片
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>8</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">費用請撥領據
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="section4_box2_content_ul"
+                                                                        data-aos="fade-down">
+                                                                        <div
+                                                                            class="section4_box2_content_li section4_box3_content_li">
+                                                                            <span>9</span>
+                                                                        </div>
+                                                                        <div class="section4_box3_content_li_txt">其他文件
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_all section5">
+                            <div class="section5_all">
+                                <div class="section_title" data-aos="zoom-in">
+                                    <h1>常見問題</h1>
+                                </div>
+                                <div class="augurio-collapse">
+                                    <div class="collapse">
+                                        <div class="title-box" data-expanded="true">
+                                            <div class="title">私有建築物耐震階段性補強之補強標準為何？</div>
+                                            <div class="icons">
+                                                <span class="collapse_icons"><img src="./img/arrow.svg" alt=""></span>
+                                            </div>
+                                        </div>
+                                        <div class="contents-box">
+                                            <div class="contents">
+                                                <br>
+                                                <p>
+                                                    耐震階段性補強以其補強標準分為耐震階段性補強A及耐震階段性補強B，其補強目標如下：<br>
+                                                    1. 耐震階段性補強 A：為降低補強目標層以下，各層發生軟弱層集中式破壞的風險。<br>
+                                                    2. 耐震階段性補強 B：補強後之整幢(棟)結構在結構分析過程中選取的性能點，不會有任一垂直承載構件發生軸向破壞或完全喪失側向強度之虞。
+                                                <div style="height: 1px;"></div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse">
+                                        <div class="title-box">
+                                            <div class="icons">
+                                                <span class="collapse_icons"><img src="./img/arrow.svg" alt=""></span>
+                                            </div>
+                                            <div class="title">申請私有建築物耐震階段性補強補助時何種情形不予補助</div>
+                                        </div>
+                                        <div class="contents-box">
+                                            <div class="contents"><br>
+                                                <p>
+                                                    1. 欲辦理重建並已申請建造執照。<br>
+                                                    2. 住宅使用之比率未達二分之一之建築物。<br>
+                                                    3. 建築物為單一所有權人。<br>
+                                                    4. 公有建築物。<br>
+                                                    5. 經專業鑑定機構鑑定須拆除之高氯離子鋼筋混凝土建築物。<br>
+                                                    6. 申請結構補強已獲政府機關補助。<br>
+                                                    7. 經執行機關認定補強不具效益。
+                                                <div style="height: 1px;"></div>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="collapse">
+                                        <div class="title-box">
+                                            <div class="title">辦理私有建築耐震階段性補強之施工廠商資格為何？</div>
+                                            <div class="icons">
+                                                <span class="collapse_icons"><img src="./img/arrow.svg" alt=""></span>
+                                            </div>
+                                        </div>
+                                        <div class="contents-box">
+                                            <div class="contents"><br>
+                                                <p>
+                                                    私有建築物耐震階段性補強施工應委託依法登記開業之營造業進行工程施作，並應取得政府認可之耐震階段性補強講習會參訓證明文件。
+                                                <div style="height: 1px;"></div>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="collapse">
+                                        <div class="title-box">
+                                            <div class="title">辦理私有建築物耐震階段性補強是否須向建築主管機關申請許可</div>
+                                            <div class="icons">
+                                                <span class="collapse_icons"><img src="./img/arrow.svg" alt=""></span>
+                                            </div>
+                                        </div>
+                                        <div class="contents-box">
+                                            <div class="contents"><br>
+                                                <p>
+                                                    私有建築物耐震階段性補強設計監造與施工作業，應符合建築法等相關法令規定，並取得執行機關許可證明文件。
+                                                <div style="height: 1px;"></div>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="collapse">
+                                        <div class="title-box">
+                                            <div class="title">辦理私有建築物耐震階段性補強之設計監造作業專業人員資格為何？</div>
+                                            <div class="icons">
+                                                <span class="collapse_icons"><img src="./img/arrow.svg" alt=""></span>
+                                            </div>
+                                        </div>
+                                        <div class="contents-box">
+                                            <div class="contents"><br>
+                                                <p>
+                                                    私有建築物耐震階段性補強設計監造作業，應委託依法登記開業建築師、執業土木工程技師或結構工程技師辦理，並應取得政府認可之耐震階段性補強講習會參訓證明文件。
+                                                <div style="height: 1px;"></div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse">
+                                        <div class="title-box">
+                                            <div class="title">若尚未進行耐震評估，請問應採用何種評估方式以取得補助資格？</div>
+                                            <div class="icons">
+                                                <span class="collapse_icons"><img src="./img/arrow.svg" alt=""></span>
+                                            </div>
+                                        </div>
+                                        <div class="contents-box">
+                                            <div class="contents "><br> <!-- contents_bottom -->
+                                                <p>
+                                                    耐震評估有二種方案，分別為初步評估與詳細評估，可依民眾需求擇一方案辦理。初步評估會得危險度分數，分數越高則越危險，超過30分即為耐震階段性補強之補助對象，或可執行詳細評估，詳細評估結果為須補強或重建者，亦可申請階段性補強補助，若評估結果為合格即可繼續安心居住。
+                                                <div style="height: 10px;"></div>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="collapse">
+                                        <div class="title-box">
+                                            <div class="title">耐震階段性補強有包含處理天花板或牆壁之裂縫與滲水的問題嗎?</div>
+                                            <div class="icons">
+                                                <span class="collapse_icons"><img src="./img/arrow.svg" alt=""></span>
+                                            </div>
+                                        </div>
+                                        <div class="contents-box">
+                                            <div class="contents"><br>
+                                                <p>
+                                                    耐震階段性補強工程係以結構補強及其必要之修復為主，倘若有其餘修繕需求建議可另尋其他政府方案補助。
+                                                <div style="height: 1px;"></div>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section6" id="light">
+                            <!--  彈窗  -->
+                            <div class="section6_box">
+                                <a href="javascript:void(0)" id="closebt">
+                                    <div class="section6_box_btn"><img src="./img/closeicon.svg" alt=""></div>
+                                </a>
+                                <div class="section6_box_content_all">
+                                    <div class="section6_box_content">
+                                        <div class="section6_div_bg">台北市、新北市</div>
+                                        <div class="section6_div_tel">
+                                            (02)6630-0233 <br>
+                                            yshsiao@narlabs.org.tw
+                                        </div>
+                                        <div class="section6_div_bg">新竹縣、新竹市、<br>
+                                            嘉義縣、嘉義市、<br>
+                                            臺南市、南投縣、<br>
+                                            彰化縣、雲林縣
+                                        </div>
+                                        <div class="section6_div_tel">
+                                            (02)6630-0239 <br>
+                                            ghchang@narlabs.org.tw
+                                        </div>
+                                        <div class="section6_div_bg">花蓮縣、臺東縣、<br>
+                                            屏東縣、高雄市、<br>
+                                            基隆市、宜蘭縣
+                                        </div>
+                                        <div class="section6_div_tel">
+                                            (02)6630-5186 <br>
+                                            minchin@narlabs.org.tw
+                                        </div>
+                                        <div class="section6_div_bg">桃園市、臺中市、<br>
+                                            苗栗縣、金門縣、<br>
+                                            連江縣、澎湖縣
+                                        </div>
+                                        <div class="section6_div_tel">
+                                            (02)6630-5187 <br>
+                                            jlpeng@narlabs.org.tw
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div id="fade"></div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="right_aside">
+                    <nav class="nav_right">
+                        <div class="nav_right_all">
+                            <div class="nav_right_all_all">
+                                <div class="nav_right_title">
+                                    <div class="nav_right_bg_1">
+                                        <div class="">
+                                            <div class="nav_right_bg"><img src="./img/mark-1.svg" alt=""></div>
+                                            <div class="nav_right_text">地震災害</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="nav_right_img nav_right_img1 img-box">
+                                        <svg class="svg" class="svg" width="32" height="29" viewBox="0 0 32 29"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg_fill" class="svg_fill"
+                                                d="M15.0211 0.379761C15.2652 0.15706 15.5775 0.0241987 15.9069 0.0029979C16.2362 -0.0182029 16.563 0.073517 16.8335 0.263094L16.9789 0.379761L32 14.0706H27.6364V27.1956C27.6363 27.5528 27.5055 27.8975 27.2688 28.1645C27.032 28.4314 26.7058 28.6019 26.352 28.6437L26.1818 28.6539H16.7273L20.3636 22.8206L15.2727 18.4456L21.0909 14.0706L17.4545 11.1539L18.1818 6.77893L13.8182 11.1539L17.4545 14.0706L10.1818 18.4456L15.6364 23.5498L10.9091 28.6539H5.81818C5.46192 28.6539 5.11806 28.5227 4.85182 28.2854C4.58559 28.048 4.4155 27.721 4.37382 27.3662L4.36364 27.1956V14.0706H0L15.0211 0.379761Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="nav_right_title">
+                                    <div class="nav_right_bg_1">
+                                        <div class="">
+                                            <div class="nav_right_bg"><img src="./img/mark-1.svg" alt=""></div>
+                                            <div class="nav_right_text">耐震遊戲</div>
+                                        </div>
+                                    </div>
+                                    <div class="nav_right_img img-box">
+                                        <svg class="svg" width="32" height="25" viewBox="0 0 32 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg_fill"
+                                                d="M31.8641 18.9273L29.1699 4.85352C28.5589 2.09521 27.5838 0 23.1014 0H8.8958C4.34447 0 3.43834 2.09521 2.82736 4.85352L0.137945 18.9273C-0.344771 21.2598 0.443435 23.1144 2.43912 23.8362C4.43481 24.5581 5.9995 23.4473 7.11526 21.2803L8.17862 19.1939C8.27071 19.0134 8.4115 18.8617 8.58535 18.7558C8.7592 18.6498 8.95928 18.5937 9.16336 18.5938H22.8366C23.0407 18.5937 23.2408 18.6498 23.4146 18.7558C23.5885 18.8617 23.7293 19.0134 23.8214 19.1939L24.8847 21.2803C25.9977 23.4473 27.5659 24.5615 29.5609 23.8362C31.5559 23.1109 32.342 21.2598 31.8641 18.9273ZM14.3436 10.9375H11.0335V14.2188H8.82684V10.9375H5.51678V8.75H8.82684V5.46875H11.0335V8.75H14.3436V10.9375ZM19.0328 11.2109C18.7601 11.2109 18.4934 11.1308 18.2666 10.9805C18.0398 10.8303 17.863 10.6168 17.7586 10.367C17.6542 10.1171 17.6269 9.84223 17.6801 9.57702C17.7334 9.31182 17.8647 9.06821 18.0576 8.877C18.2505 8.6858 18.4962 8.55559 18.7638 8.50283C19.0313 8.45008 19.3086 8.47715 19.5606 8.58063C19.8126 8.68411 20.028 8.85935 20.1796 9.08418C20.3311 9.30901 20.412 9.57335 20.412 9.84375C20.412 10.2064 20.2667 10.5541 20.0081 10.8105C19.7494 11.0669 19.3986 11.2109 19.0328 11.2109V11.2109ZM22.067 14.2188C21.7943 14.2188 21.5276 14.1386 21.3008 13.9883C21.074 13.8381 20.8972 13.6246 20.7928 13.3748C20.6885 13.1249 20.6611 12.85 20.7144 12.5848C20.7676 12.3196 20.8989 12.076 21.0918 11.8848C21.2847 11.6936 21.5304 11.5634 21.798 11.5106C22.0655 11.4579 22.3428 11.485 22.5948 11.5884C22.8469 11.6919 23.0623 11.8672 23.2138 12.092C23.3654 12.3168 23.4462 12.5812 23.4462 12.8516C23.4462 13.2142 23.3009 13.5619 23.0423 13.8183C22.7836 14.0747 22.4328 14.2188 22.067 14.2188ZM22.067 8.20312C21.7943 8.20312 21.5276 8.12294 21.3008 7.97271C21.074 7.82248 20.8972 7.60896 20.7928 7.35914C20.6885 7.10932 20.6611 6.83442 20.7144 6.56921C20.7676 6.304 20.8989 6.06039 21.0918 5.86919C21.2847 5.67799 21.5304 5.54777 21.798 5.49502C22.0655 5.44227 22.3428 5.46934 22.5948 5.57282C22.8469 5.6763 23.0623 5.85154 23.2138 6.07637C23.3654 6.3012 23.4462 6.56553 23.4462 6.83594C23.4462 7.19854 23.3009 7.54629 23.0423 7.80269C22.7836 8.05908 22.4328 8.20312 22.067 8.20312ZM25.1013 11.2109C24.8285 11.2109 24.5618 11.1308 24.335 10.9805C24.1082 10.8303 23.9314 10.6168 23.8271 10.367C23.7227 10.1171 23.6954 9.84223 23.7486 9.57702C23.8018 9.31182 23.9331 9.06821 24.126 8.877C24.3189 8.6858 24.5647 8.55559 24.8322 8.50283C25.0997 8.45008 25.377 8.47715 25.6291 8.58063C25.8811 8.68411 26.0965 8.85935 26.248 9.08418C26.3996 9.30901 26.4805 9.57335 26.4805 9.84375C26.4805 10.2064 26.3351 10.5541 26.0765 10.8105C25.8179 11.0669 25.467 11.2109 25.1013 11.2109V11.2109Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="nav_right_title">
+                                    <div class="nav_right_bg_1">
+                                        <div class="">
+                                            <div class="nav_right_bg"><img src="./img/mark-1.svg" alt=""></div>
+                                            <div class="nav_right_text">耐震補強</div>
+                                        </div>
+                                    </div>
+                                    <div class="nav_right_img img-box">
+                                        <svg class="svg" width="29" height="30" viewBox="0 0 29 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg_fill"
+                                                d="M21.1196 0.6225C21.2128 0.435703 21.3562 0.278542 21.5337 0.168603C21.7112 0.0586642 21.9158 0.000285526 22.1246 0H24.3746C24.5833 0.000285526 24.7879 0.0586642 24.9654 0.168603C25.1429 0.278542 25.2863 0.435703 25.3796 0.6225L26.8796 3.6225C26.9624 3.78798 27.0031 3.97133 26.9982 4.15632C26.9932 4.34131 26.9427 4.52221 26.8511 4.683L25.4996 7.05V15H27.3746C27.6729 15 27.9591 15.1185 28.1701 15.3295C28.381 15.5405 28.4996 15.8266 28.4996 16.125V18.75H17.9996V16.125C17.9996 15.8266 18.1181 15.5405 18.3291 15.3295C18.5401 15.1185 18.8262 15 19.1246 15H20.9996V7.05L19.6481 4.683C19.5562 4.52234 19.5054 4.3415 19.5002 4.15651C19.495 3.97152 19.5355 3.7881 19.6181 3.6225L21.1181 0.6225H21.1196ZM17.9996 21V24.75C17.9996 26.1424 18.5527 27.4777 19.5373 28.4623C20.5218 29.4469 21.8572 30 23.2496 30C24.642 30 25.9773 29.4469 26.9619 28.4623C27.9464 27.4777 28.4996 26.1424 28.4996 24.75V21H17.9996ZM10.2416 0.318C10.3935 0.215015 10.5684 0.150785 10.7509 0.130914C10.9334 0.111043 11.118 0.136134 11.2886 0.204C12.7591 0.787181 14.0311 1.78072 14.9529 3.06629C15.8748 4.35187 16.4078 5.87532 16.4884 7.45522C16.569 9.03512 16.1939 10.6049 15.4076 11.9776C14.6213 13.3504 13.4571 14.4682 12.0536 15.198V26.196C12.0536 27.2049 11.6528 28.1724 10.9394 28.8858C10.226 29.5992 9.25845 30 8.24957 30C7.24069 30 6.27312 29.5992 5.55974 28.8858C4.84635 28.1724 4.44557 27.2049 4.44557 26.196V15.198C3.04202 14.4682 1.8778 13.3504 1.09154 11.9776C0.30528 10.6049 -0.069884 9.03512 0.0107232 7.45522C0.0913303 5.87532 0.624312 4.35187 1.5462 3.06629C2.46809 1.78072 3.74003 0.787181 5.21057 0.204C5.38115 0.136489 5.56565 0.111718 5.748 0.131845C5.93034 0.151972 6.105 0.216386 6.25675 0.319475C6.4085 0.422564 6.53273 0.561199 6.61863 0.723299C6.70453 0.8854 6.74948 1.06605 6.74957 1.2495V6.75C6.74957 7.14782 6.90761 7.52936 7.18891 7.81066C7.47021 8.09196 7.85174 8.25 8.24957 8.25C8.64739 8.25 9.02892 8.09196 9.31023 7.81066C9.59153 7.52936 9.74957 7.14782 9.74957 6.75V1.2495C9.74957 1.06612 9.7944 0.88553 9.88015 0.72344C9.9659 0.56135 10.09 0.422679 10.2416 0.3195V0.318Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="nav_right_title">
+                                    <div class="nav_right_bg_1">
+                                        <div class="">
+                                            <div class="nav_right_bg"><img src="./img/mark-1.svg" alt=""></div>
+                                            <div class="nav_right_text">申請補助</div>
+                                        </div>
+                                    </div>
+                                    <div class="nav_right_img img-box">
+                                        <svg class="svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg_fill"
+                                                d="M6.375 10.125C5.97718 10.125 5.59564 10.283 5.31434 10.5643C5.03304 10.8456 4.875 11.2272 4.875 11.625C4.875 12.0228 5.03304 12.4044 5.31434 12.6857C5.59564 12.967 5.97718 13.125 6.375 13.125C6.77282 13.125 7.15436 12.967 7.43566 12.6857C7.71696 12.4044 7.875 12.0228 7.875 11.625C7.875 11.2272 7.71696 10.8456 7.43566 10.5643C7.15436 10.283 6.77282 10.125 6.375 10.125ZM4.875 20.625C4.875 20.2272 5.03304 19.8456 5.31434 19.5643C5.59564 19.283 5.97718 19.125 6.375 19.125C6.77282 19.125 7.15436 19.283 7.43566 19.5643C7.71696 19.8456 7.875 20.2272 7.875 20.625C7.875 21.0228 7.71696 21.4044 7.43566 21.6857C7.15436 21.967 6.77282 22.125 6.375 22.125C5.97718 22.125 5.59564 21.967 5.31434 21.6857C5.03304 21.4044 4.875 21.0228 4.875 20.625ZM3.9375 0C2.89321 0 1.89169 0.414842 1.15327 1.15327C0.414842 1.89169 0 2.89321 0 3.9375V23.0625C0 25.2375 1.7625 27 3.9375 27H13.533C12.5293 25.4332 11.9971 23.6108 12 21.75C12 16.365 16.365 12 21.75 12C23.6827 12 25.485 12.5625 27 13.533V3.9375C27 1.7625 25.2375 0 23.0625 0H3.9375ZM3 11.625C3 10.7299 3.35558 9.87145 3.98851 9.23851C4.62145 8.60558 5.47989 8.25 6.375 8.25C7.27011 8.25 8.12855 8.60558 8.76149 9.23851C9.39442 9.87145 9.75 10.7299 9.75 11.625C9.75 12.5201 9.39442 13.3785 8.76149 14.0115C8.12855 14.6444 7.27011 15 6.375 15C5.47989 15 4.62145 14.6444 3.98851 14.0115C3.35558 13.3785 3 12.5201 3 11.625V11.625ZM6.375 17.25C7.27011 17.25 8.12855 17.6056 8.76149 18.2385C9.39442 18.8715 9.75 19.7299 9.75 20.625C9.75 21.5201 9.39442 22.3785 8.76149 23.0115C8.12855 23.6444 7.27011 24 6.375 24C5.47989 24 4.62145 23.6444 3.98851 23.0115C3.35558 22.3785 3 21.5201 3 20.625C3 19.7299 3.35558 18.8715 3.98851 18.2385C4.62145 17.6056 5.47989 17.25 6.375 17.25V17.25ZM11.25 10.3125C11.25 9.795 11.67 9.375 12.1875 9.375H23.0618C23.3104 9.375 23.5488 9.47377 23.7247 9.64959C23.9005 9.8254 23.9993 10.0639 23.9993 10.3125C23.9993 10.5611 23.9005 10.7996 23.7247 10.9754C23.5488 11.1512 23.3104 11.25 23.0618 11.25H12.1875C11.67 11.25 11.25 10.83 11.25 10.3125ZM3.94725 3.82125H23.0475C23.2961 3.82125 23.5346 3.92002 23.7104 4.09584C23.8862 4.27165 23.985 4.51011 23.985 4.75875C23.985 5.00739 23.8862 5.24585 23.7104 5.42166C23.5346 5.59748 23.2961 5.69625 23.0475 5.69625H3.94725C3.69861 5.69625 3.46015 5.59748 3.28434 5.42166C3.10852 5.24585 3.00975 5.00739 3.00975 4.75875C3.00975 4.51011 3.10852 4.27165 3.28434 4.09584C3.46015 3.92002 3.69861 3.82125 3.94725 3.82125V3.82125ZM30 21.75C30 26.3062 26.3062 30 21.75 30C17.1938 30 13.5 26.3062 13.5 21.75C13.5 17.1938 17.1938 13.5 21.75 13.5C26.3062 13.5 30 17.1938 30 21.75ZM22.5 16.5C22.5 16.3011 22.421 16.1103 22.2803 15.9697C22.1397 15.829 21.9489 15.75 21.75 15.75C21.5511 15.75 21.3603 15.829 21.2197 15.9697C21.079 16.1103 21 16.3011 21 16.5V21H16.5C16.3011 21 16.1103 21.079 15.9697 21.2197C15.829 21.3603 15.75 21.5511 15.75 21.75C15.75 21.9489 15.829 22.1397 15.9697 22.2803C16.1103 22.421 16.3011 22.5 16.5 22.5H21V27C21 27.1989 21.079 27.3897 21.2197 27.5303C21.3603 27.671 21.5511 27.75 21.75 27.75C21.9489 27.75 22.1397 27.671 22.2803 27.5303C22.421 27.3897 22.5 27.1989 22.5 27V22.5H27C27.1989 22.5 27.3897 22.421 27.5303 22.2803C27.671 22.1397 27.75 21.9489 27.75 21.75C27.75 21.5511 27.671 21.3603 27.5303 21.2197C27.3897 21.079 27.1989 21 27 21H22.5V16.5Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="nav_right_title">
+                                    <div class="nav_right_bg_1">
+                                        <div class="">
+                                            <div class="nav_right_bg"><img src="./img/mark-1.svg" alt=""></div>
+                                            <div class="nav_right_text">常見問題</div>
+                                        </div>
+                                    </div>
+                                    <div class="nav_right_img img-box">
+                                        <svg class="svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg_fill"
+                                                d="M30 15C30 18.9782 28.4196 22.7936 25.6066 25.6066C22.7936 28.4196 18.9782 30 15 30C11.0218 30 7.20644 28.4196 4.3934 25.6066C1.58035 22.7936 0 18.9782 0 15C0 11.0218 1.58035 7.20644 4.3934 4.3934C7.20644 1.58035 11.0218 0 15 0C18.9782 0 22.7936 1.58035 25.6066 4.3934C28.4196 7.20644 30 11.0218 30 15V15ZM10.305 11.3119H11.8519C12.1106 11.3119 12.3169 11.1 12.3506 10.8431C12.5194 9.61312 13.3631 8.71688 14.8669 8.71688C16.1531 8.71688 17.3306 9.36 17.3306 10.9069C17.3306 12.0975 16.6294 12.645 15.5212 13.4775C14.2594 14.3944 13.26 15.465 13.3313 17.2031L13.3369 17.61C13.3388 17.733 13.3891 17.8503 13.4768 17.9366C13.5645 18.0229 13.6826 18.0713 13.8056 18.0712H15.3262C15.4506 18.0712 15.5698 18.0219 15.6577 17.934C15.7456 17.846 15.795 17.7268 15.795 17.6025V17.4056C15.795 16.0594 16.3069 15.6675 17.6888 14.6194C18.8306 13.7512 20.0213 12.7875 20.0213 10.7644C20.0213 7.93125 17.6288 6.5625 15.0094 6.5625C12.6338 6.5625 10.0313 7.66875 9.85313 10.8487C9.85056 10.9093 9.86041 10.9697 9.88206 11.0263C9.90371 11.0829 9.93672 11.1345 9.97904 11.1779C10.0214 11.2213 10.0721 11.2555 10.1282 11.2786C10.1842 11.3016 10.2444 11.313 10.305 11.3119V11.3119ZM14.6644 23.3925C15.8081 23.3925 16.5938 22.6537 16.5938 21.6544C16.5938 20.6194 15.8063 19.8919 14.6644 19.8919C13.5694 19.8919 12.7725 20.6194 12.7725 21.6544C12.7725 22.6537 13.5694 23.3925 14.6663 23.3925H14.6644Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_all">
+                <div class="footer_all_content">
+                    <div class="footer_link footer_link_1">
+                        <span class="footer_link_span">補強專業相關連結</span>
+                        <div><a href="http://www.ncree.org/">國家地震工程研究中心</a></div>
+                        <div><a href="http://streethouse.ncree.narl.org.tw/">街屋耐震資訊網</a></div>
+                        <div><a href="https://school.ncree.org.tw/school/index.html">校舍耐震資訊網</a></div>
+                    </div>
+                    <div class="footer_link">
+                        <span class="footer_link_span">專業技師公會</span>
+                        <div class="footer_link_span_1"><a href="http://www.ncsea.org.tw/">中華民國結構工程技師公會全國聯合會全聯會</a>
+                        </div>
+                        <div><a href="http://www.cupcea.org.tw/">中華民國土木技師公會全國聯合會</a></div>
+                        <div><a href="http://www.naa.org.tw/">中華民國全國建築師公會</a></div>
+                    </div>
+                </div>
+                <div class="footer_log_all">
+                    <div class="footer_log footer_log_1"><img src="./img/logo-3.svg" alt=""></div>
+                    <div class="footer_log"><img src="./img/logo-2.svg" alt=""></div>
+                </div>
+                <div class="footer_contact_all">
+                    <div class="footer_contact_txt">
+                        <span class="footer_link_span">聯絡我們</span>
+                        <div>連絡電話：(02)6630-0237</div>
+                        <div>服務時間：週一至週五 9:00~18:00</div>
+                        <div>地址：台北市大安區辛亥路三段200號</div>
+                    </div>
+                    <div class="footer_contact">
+                        <a href="javascript:void(0)" id="linkbt">
+                            <div class="footer_contact_text">聯絡服務縣市</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_log_all_end">
+                <div class="footer_log footer_log_1"><img src="./img/logo-3.svg" alt=""></div>
+                <div class="footer_log"><img src="./img/logo-2.svg" alt=""></div>
+            </div>
+            <div class="footer_c">
+                <div class="footer_c_txt">Copyright © 財團法人國家實驗研究院國家地震工程研究中心 All rights reserved</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://www.youtube.com/player_api"></script>
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      </script>
+    <script src="./js/game.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('lottie'), // 命名
+            path: 'animate.json', // json檔
+            renderer: 'svg', // Required
+            loop: true, // Optional
+            autoplay: true, // Optional
+        });
+
+    </script>
+    <script src="./js/sec5.js"></script>
+    <script src="./js/sec6.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/aside.js"></script>
+
+</body>
+
+</html>
