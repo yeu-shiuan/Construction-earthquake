@@ -1,2 +1,0 @@
-# Construction-shockresistant
-# Construction-earthquake
